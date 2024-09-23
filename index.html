@@ -61,7 +61,7 @@
                     <div>
                         <div class="flex items-center gap-2 max-w-fit rounded-md bg-[#1111110d] py-3 px-6 font-semibold ">
                             <img src="./assets/coin.png" alt="">
-                            <p class="text-[#111111b3]">600 BDT</p>
+                            <p class="text-[#111111b3]"><span id="total-donation2">600</span> BDT</p>
                         </div>
     
                         <h3 class="text-xl font-bold my-4">Donate for Flood Relief in Feni,Bangladesh</h3>
@@ -70,9 +70,9 @@
                             The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
                         </p>
     
-                        <input type="text" placeholder="Write Donation Amount" class="input input-bordered p-5 w-full rounded-lg mt-6 mb-4"/>
+                        <input id="donation-amount-feni" type="text" placeholder="Write Donation Amount" class="input input-bordered p-5 w-full rounded-lg mt-6 mb-4"/>
     
-                        <div class="text-center rounded-md bg-[#B4F461] py-3 px-6 font-semibold text-xl">
+                        <div id="btn-feni" class="text-center rounded-md bg-[#B4F461] py-3 px-6 font-semibold text-xl">
                             Donate Now
                         </div>
                     </div>
@@ -84,7 +84,7 @@
                     <div>
                         <div class="flex items-center gap-2 max-w-fit rounded-md bg-[#1111110d] py-3 px-6 font-semibold ">
                             <img src="./assets/coin.png" alt="">
-                            <p class="text-[#111111b3]">2400 BDT</p>
+                            <p class="text-[#111111b3]"><span id="total-donation3">2400</span> BDT</p>
                         </div>
     
                         <h3 class="text-xl font-bold my-4">Aid for Injured in the Quota Movement</h3>
@@ -93,9 +93,9 @@
                             The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.
                         </p>
     
-                        <input type="text" placeholder="Write Donation Amount" class="input input-bordered p-5 w-full rounded-lg mt-6 mb-4"/>
+                        <input id="donation-amount-flood" type="text" placeholder="Write Donation Amount" class="input input-bordered p-5 w-full rounded-lg mt-6 mb-4"/>
     
-                        <div class="text-center rounded-md bg-[#B4F461] py-3 px-6 font-semibold text-xl">
+                        <div id="btn-flood-relief" class="text-center rounded-md bg-[#B4F461] py-3 px-6 font-semibold text-xl">
                             Donate Now
                         </div>
                     </div>
@@ -120,9 +120,22 @@
         </section>
     </main>
 
+
+    <dialog id="my_modal_1" class="modal">
+    <div class="modal-box">
+        <h3 class="text-lg font-bold">Hello!</h3>
+        <p class="py-4">Press ESC key or click the button below to close</p>
+        <div class="modal-action">
+        <form method="dialog">\
+            <button class="btn">Close</button>
+        </form>
+        </div>
+    </div>
+    </dialog>
     <footer class="py-20 bg-[#F9F7F3] mt-auto">
 
     </footer>
+    <script src="./js/utilities.js"></script>
     <script src="./js/app.js"></script>
 </body>
 </html>
