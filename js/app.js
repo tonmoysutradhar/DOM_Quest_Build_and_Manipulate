@@ -40,6 +40,11 @@ document.getElementById('btn-feni')
         const totalDonation = (donationAmount + donationFeni).toFixed(2) ;
 
         document.getElementById('total-donation2').innerText = totalDonation ;
+
+        const donatedText = document.getElementById('donated-text');
+        donatedText.innerHTML = `${donationFeni} Taka is Donated for famine-2024 at Feni, Bangladesh` ;
+        console.log(donatedText);
+        
     }
     else {
         alert("Invalid Donation Amount")
