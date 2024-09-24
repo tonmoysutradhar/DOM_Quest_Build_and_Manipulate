@@ -11,8 +11,8 @@
 </head>
 <body id="show-page" class=" flex flex-col min-h-screen">
     <main  class="sticky top-0 bg-scroll backdrop-blur-lg">
-        <nav class=" bg-[#F9F7F3] pt-5 pb-9">
-            <div class="flex items-center justify-between w-5/6 mx-auto">
+        <nav class=" bg-[#F9F7F3] pt-5 pb-5 sm:pb-9">
+            <div class="flex flex-col gap-4 sm:flex-row items-center justify-between w-5/6 mx-auto">
                 <div class="">
                     <!-- <button onclick="navigateToAbout()" class=" rounded-md bg-[#B4F461] py-3 px-8 text-xl font-semibold">Blog</button> -->
                     <a id="switch-page" href="./blog.html" class=" rounded-md bg-[#B4F461] hover:bg-[#b9e67f] py-3 px-8 text-xl font-semibold">Blog</a>
@@ -27,7 +27,7 @@
                 </div>
             </div>
         </nav>
-        <section class=" flex justify-center gap-4 mb-8 pt-16">
+        <section class=" flex justify-center gap-4 mb-8 pt-8 md:pt-16">
             <button id="donation-page-btn" onclick="changeColors(this, document.getElementById('history-page-btn'))" class=" rounded-md bg-[#B4F461] py-4 px-8 text-xl font-semibold">Donation</button>
             <button id="history-page-btn" onclick="changeColors(this, document.getElementById('donation-page-btn'))" class=" rounded-md bg-[#bbb0b04d] py-4 px-8 text-xl font-semibold">History</button>
         </section>
@@ -36,7 +36,7 @@
     <main class="w-5/6 mx-auto pb-16">
         <section id="donation-page" class="">
             <div class="grid gap-8">
-                <div class="grid grid-cols-2 gap-8 p-8 border rounded-2xl items-center">
+                <div class="grid lg:grid-cols-2 gap-8 p-8 border rounded-2xl items-center">
                     <div class="">
                         <img class="w-full" src="./assets/noakhali.png" alt="">
                     </div>
@@ -59,7 +59,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid grid-cols-2 gap-8 p-8 border rounded-2xl items-center">
+                <div class="grid lg:grid-cols-2 gap-8 p-8 border rounded-2xl items-center">
                     <div class="">
                         <img class="w-full" src="./assets/feni.png" alt="">
                     </div>
@@ -82,7 +82,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid grid-cols-2 gap-8 p-8 border rounded-2xl items-center">
+                <div class="grid lg:grid-cols-2 gap-8 p-8 border rounded-2xl items-center">
                     <div class="">
                         <img class="w-full" src="./assets/quota-protest.png" alt="">
                     </div>
