@@ -9,13 +9,6 @@ document.getElementById('history-page-btn')
     showSectionById ('history-page');
 })
 
-
-// function changeButtonColor(button) {
-//     button.style.backgroundColor = "lightgreen";
-// }
-
-
-
 function changeColors(clickedButton, otherButton) {
     clickedButton.style.backgroundColor = "#B4F461";
     otherButton.style.backgroundColor = "#bbb0b04d";

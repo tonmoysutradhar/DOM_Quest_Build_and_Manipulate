@@ -7,12 +7,13 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class=" flex flex-col min-h-screen">
-    <main class="sticky top-0 bg-scroll backdrop-blur-lg">
+<body id="show-page" class=" flex flex-col min-h-screen">
+    <main  class="sticky top-0 bg-scroll backdrop-blur-lg">
         <nav class=" bg-[#F9F7F3] pt-5 pb-9">
             <div class="flex items-center justify-between w-5/6 mx-auto">
                 <div class="">
-                    <button class=" rounded-md bg-[#B4F461] py-3 px-8 text-xl font-semibold">Blog</button>
+                    <!-- <button onclick="navigateToAbout()" class=" rounded-md bg-[#B4F461] py-3 px-8 text-xl font-semibold">Blog</button> -->
+                    <a id="switch-page" href="./blog.html" class=" rounded-md bg-[#B4F461] hover:bg-[#b9e67f] py-3 px-8 text-xl font-semibold">Blog</a>
                 </div>
                 <div class=" flex items-center justify-center gap-4">
                   <img src="./assets/logo.png" alt="">
@@ -22,7 +23,7 @@
                     <img src="./assets/coin.png" alt="">
                     <h1 class="text-lg text-[#111111b3] font-medium"><span id="my-balance">5500</span> BDT</h1>
                 </div>
-              </div>
+            </div>
         </nav>
         <section class=" flex justify-center gap-4 mb-8 pt-16">
             <button id="donation-page-btn" onclick="changeColors(this, document.getElementById('history-page-btn'))" class=" rounded-md bg-[#B4F461] py-4 px-8 text-xl font-semibold">Donation</button>
@@ -51,7 +52,7 @@
     
                         <input id="donation-amount-noakhali" autocomplete="off" type="text" placeholder="Write Donation Amount" class="input input-bordered p-5 w-full rounded-lg mt-6 mb-4"/>
     
-                        <div id="btn-noakhali" class="text-center rounded-md bg-[#B4F461] py-3 px-6 font-semibold text-xl">
+                        <div id="btn-noakhali" class="text-center rounded-md bg-[#B4F461] cursor-pointer hover:bg-[#b9e67f] py-3 px-6 font-semibold text-xl">
                             Donate Now
                         </div>
                     </div>
@@ -74,7 +75,7 @@
     
                         <input id="donation-amount-feni" autocomplete="off" type="text" placeholder="Write Donation Amount" class="input input-bordered p-5 w-full rounded-lg mt-6 mb-4"/>
     
-                        <div id="btn-feni" class="text-center rounded-md bg-[#B4F461] py-3 px-6 font-semibold text-xl">
+                        <div id="btn-feni" class="text-center rounded-md bg-[#B4F461] cursor-pointer hover:bg-[#b9e67f] py-3 px-6 font-semibold text-xl">
                             Donate Now
                         </div>
                     </div>
@@ -97,7 +98,7 @@
     
                         <input id="donation-amount-flood" autocomplete="off" type="text" placeholder="Write Donation Amount" class="input input-bordered p-5 w-full rounded-lg mt-6 mb-4"/>
     
-                        <div id="btn-flood-relief" class="text-center rounded-md bg-[#B4F461] py-3 px-6 font-semibold text-xl">
+                        <div id="btn-flood-relief" class="text-center rounded-md bg-[#B4F461] cursor-pointer hover:bg-[#b9e67f] py-3 px-6 font-semibold text-xl">
                             Donate Now
                         </div>
                     </div>
@@ -132,5 +133,6 @@
     <script src="./js/utilities.js"></script>
     <script src="./js/app.js"></script>
     <script src="./js/feature.js"></script>
+    <script src="./js/switch_page.js"></script>
 </body>
 </html>
