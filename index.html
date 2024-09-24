@@ -25,8 +25,8 @@
               </div>
         </nav>
         <section class=" flex justify-center gap-4 mb-8 pt-16">
-            <button id="donation-page-btn" class=" rounded-md bg-[#B4F461] py-4 px-8 text-xl font-semibold">Donation</button>
-            <button id="history-page-btn" class=" rounded-md bg-[#B4F461] py-4 px-8 text-xl font-semibold">History</button>
+            <button id="donation-page-btn" onclick="changeColors(this, document.getElementById('history-page-btn'))" class=" rounded-md bg-[#B4F461] py-4 px-8 text-xl font-semibold">Donation</button>
+            <button id="history-page-btn" onclick="changeColors(this, document.getElementById('donation-page-btn'))" class=" rounded-md bg-[#bbb0b04d] py-4 px-8 text-xl font-semibold">History</button>
         </section>
     </main>
 
@@ -105,27 +105,27 @@
             </div>
         </section>
         <section id="history-page" class="hidden">
-            <div class="grid gap-6">
-                <div class=" p-8 border rounded-2xl">
-                    <h3 id="donated-text" class="text-xl font-bold mb-4"></h3>
-                    <p class="text-[#111111b3]">Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
-                </div>
+            <div id="donated-text" class="grid gap-6">
+                
             </div>
         </section>
     </main>
 
-
+    <!-- modal -->
     <dialog id="my_modal_1" class="modal">
-    <div class="modal-box">
-        <h3 class="text-lg font-bold">Hello!</h3>
-        <p class="py-4">Press ESC key or click the button below to close</p>
+    <div class="modal-box grid justify-items-center rounded-2xl">
+        <h2 class="text-5xl font-bold">Congrates!</h2>
+        <img class="pt-6" src="./assets/coin.png" alt="">
+        <p class="py-4">You Have Donated for Humankind</p>
+        <h3 class="text-xl font-bold">Successfully</h3>
         <div class="modal-action">
-        <form method="dialog">\
-            <button class="btn">Close</button>
+        <form method="dialog">
+            <button class="btn">Close Confirmation</button>
         </form>
         </div>
     </div>
     </dialog>
+    <!-- footer -->
     <footer class="py-20 bg-[#F9F7F3] mt-auto">
 
     </footer>
